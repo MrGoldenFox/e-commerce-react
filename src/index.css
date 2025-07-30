@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  font-family: var(--font);
+}
+
+@theme {
+  --font: "Segoe UI", sans-serif;
+  --primary: #080b20;
+  --body: #323f4f;
+  --color-accent: #215f84;
+  --color-bg: #e8eef0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+  color: var(--body);
+}
+
+button,
+a {
+  cursor: pointer;
+}
