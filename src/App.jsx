@@ -4,7 +4,7 @@ import { Contact } from "./pages/Contact";
 import { Store } from "./pages/Store";
 import { Header } from "./components/Header";
 import { productsService } from "./services/productService";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
   const [filteredProducts, setFilteredProducts] = useState([]);
