@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { AddToCartBtn } from "./AddToCartBtn";
-import { ModelWindow } from "./ModelWindow";
+import { useState } from "react"
+import { AddToCartBtn } from "./AddToCartBtn"
+import { ModelWindow } from "./ModelWindow"
 
 export function Product({
   title,
@@ -32,7 +32,6 @@ export function Product({
 
       {openModelWindow && (
         <ModelWindow
-          openModelWindow={openModelWindow}
           setOpenModelWindow={setOpenModelWindow}
           dimensions={dimensions}
           title={title}
