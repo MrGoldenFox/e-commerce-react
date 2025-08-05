@@ -1,8 +1,9 @@
-const FAKE_API = "https://dummyjson.com";
+const FAKE_API = 'https://dummyjson.com'
 
 export const productsService = async () => {
-  const res = await fetch(`${FAKE_API}/products`);
-  const data = await res.json();
+	const res = await fetch(`${FAKE_API}/products?limit=100`)
+	const data = await res.json()
 
-  return data.products;
-};
+	console.log(data)
+	return data.products
+}

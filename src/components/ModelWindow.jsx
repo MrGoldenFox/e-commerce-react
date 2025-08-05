@@ -4,7 +4,6 @@ import { AddToCartBtn } from './AddToCartBtn'
 
 export function ModelWindow({
 	setOpenModelWindow,
-	dimensions,
 	title,
 	category,
 	price,
@@ -26,16 +25,6 @@ export function ModelWindow({
 				<div className='flex flex-col gap-2 sm:max-w-1/2'>
 					<h4>{title}</h4>
 					<p>{description}</p>
-					<ul className='border rounded-md border-black/30'>
-						{Object.entries(dimensions).map(([key, value]) => (
-							<li
-								key={key}
-								className='flex justify-between py-2 px-1 border-b-1 border-b-black/30 last:border-b-0'
-							>
-								{key}: <span>{value}</span>
-							</li>
-						))}
-					</ul>
 					<div className='flex justify-between items-center my-2'>
 						Price:
 						<p>{price}$</p>

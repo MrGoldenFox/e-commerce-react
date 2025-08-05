@@ -1,13 +1,11 @@
-import { ListOfCatagory } from "../components/ListOfCatagory";
-import { ProductsList } from "../components/ProductsList";
-import { SearchInput } from "../components/SearchInput";
+import { Hero } from '../components/Hero'
+import { Shop } from '../components/Shop'
 
-export function Home({ products, value, setValue }) {
-  return (
-    <>
-      <SearchInput value={value} setValue={setValue} />
-      <ListOfCatagory products={products} />
-      <ProductsList products={products} />
-    </>
-  );
+export function Home() {
+	return (
+		<>
+			<Hero />
+			<Shop />
+		</>
+	)
 }
